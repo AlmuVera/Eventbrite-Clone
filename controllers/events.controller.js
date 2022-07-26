@@ -1,12 +1,13 @@
-const Event = require("../models/event.model.js")
+const mongoose = require("mongoose");
+const Event = require("../models/event.model");
 
 module.exports.list = (req, res, next) => {
-    res.render('events/list', { events });
+  Event.find()
+    // .populate("author")
+    .then((events) => {
+      res.render("events/list", { events });
+    })
+    .catch((error) => next(error));
 };
 
-//ejemplo de
-// module.exports.list = (req, res, next) => {
-//     Event.find(req.query).then((events) => {
-//       res.render("events/list", { events });
-//     });
-//   };
+

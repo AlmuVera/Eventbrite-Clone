@@ -2,6 +2,7 @@ const express = require("express");
 // Creamos la aplicación servidor ejecutando express como una función
 const app = express();
 
+require("./config/db.config");
 require("./config/hbs.config")
 
 // Configuracion de la vista
