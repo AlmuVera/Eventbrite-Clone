@@ -5,6 +5,7 @@
     "hbs": "^4.2.0",
     "http-errors": "^2.0.0",
     "mongoose": "^6.4.6",
+    "morgan": "^1.10.0",
     "node": "^18.5.0",
     "nodemon": "^2.0.19"
   },
@@ -16,7 +17,6 @@
   "description": "",
   "version": "1.0.0",
   "main": "app.js",
-  "devDependencies": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/AlmuVera/eventbrite-clone.git"

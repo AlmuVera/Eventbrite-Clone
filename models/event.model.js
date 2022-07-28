@@ -2,15 +2,46 @@ const mongoose = require('mongoose');
 const Event = mongoose.model(
     'Event',
     {
-        title: String,
-        author: String,
         image: String,
-        description: String,
+        title: String,
+        date: String,
         location: String,
+        city: String,
+        price: Number,
+        organizer: String,
+        description: String,
+        ticketStatus: String, //sold out or available   
     },
  );
  
  module.exports = Event;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//>>>>>>>>
+//>>>>>>>>
+//>>>>>>>>
+
+
 
  // const Schema = mongoose.Schema;
 
